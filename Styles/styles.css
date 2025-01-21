@@ -48,11 +48,24 @@
     width: 157px;
     color: rgb(255, 255, 255);
 }
-.primary-cover-size{
+
+.primary-cover-size {
     max-width: 1440px;
     margin: 0 auto;
 }
 
+
+.primary-title {
+    font-size: 2.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.primary-bg {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+}
 
 /* nav & banner part */
 header {
@@ -61,7 +74,7 @@ header {
 
 .navbar,
 .banner {
-   
+
     justify-content: space-between;
     align-items: center;
 }
@@ -121,17 +134,6 @@ header {
 }
 
 /* curriculum section */
-.curriculum {
-    background-image: url(../images/bg.png);
-    background-repeat: no-repeat;
-}
-
-.curriculum-title {
-    font-size: 2.9rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 80px;
-}
 
 .card-container {
     flex: 1;
@@ -202,17 +204,169 @@ header {
     border-radius: 30px;
     border: none;
     background: rgb(254, 163, 1);
-    
+
 }
-.stylish-btn:hover{
+
+.stylish-btn:hover {
     background-color: rgb(100, 200, 255);
 }
 
+/* our story style */
 
+.story-bg {
+    background: url(../images/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.story-contain {
+    justify-content: center;
+    gap: 19px;
+
+
+}
+
+.story-card-img {
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+.story-btn {
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 15px 18px;
+    position: relative;
+    left: 38.35px;
+    top: -25px;
+
+
+}
+
+.story-card {
+    width: 540.27px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding-bottom: 34px;
+
+}
+
+.story-des {
+    margin: 34px 38px;
+}
+
+.story-des h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.mini-card {
+    width: 290.69px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+}
+
+.mini-card-btn {
+    background: rgb(149, 178, 38);
+    padding: 12px 18px;
+}
+
+.mini-card-btn2 {
+    background: rgb(93, 88, 240);
+}
+
+.mini-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 24px 54px 33px 37px;
+}
+
+.story-view-btn {
+    margin: 60px auto;
+    background: rgb(17, 17, 17);
+    border-radius: 12px;
+    padding: 10px;
+    width: 157px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+
+.our-story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* footer part */
+
+.footer {
+    background-color: rgb(1, 172, 253);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 123px 228px 124px 140px;
+    color: rgb(255, 255, 255);
+    gap: 170px;
+
+}
+
+.kids-edu-disc {
+    justify-content: center;
+    align-items: center;
+}
+
+.kids-edu-disc img {
+    background: rgb(255, 255, 255);
+    margin-right: 11px;
+    
+}
+
+.kids-edu h4 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.kids-edu h5 {
+    margin-top: 36px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.about-school h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about-school ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.about-school ul a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
 
 /* Responsive Media Query */
 @media screen and (max-width:576px) {
-    .navbar,.card-container {
+
+    .navbar,
+    .card-container {
         flex-direction: column;
 
 
@@ -226,7 +380,8 @@ header {
 
     .logo h5,
     .list-items,
-    .nav-btn,.curriculum-btn {
+    .nav-btn,
+    .curriculum-btn {
         display: none;
     }
 
