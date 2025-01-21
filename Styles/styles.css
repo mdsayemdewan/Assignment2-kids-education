@@ -51,7 +51,7 @@
 
 .primary-cover-size {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 
@@ -118,7 +118,7 @@ header {
 
 
 }
-
+/* banner style */
 .banner-desc {
     max-width: 640px;
 }
@@ -142,16 +142,13 @@ header {
 /* curriculum section */
 
 .card-container {
-    flex: 1;
-    margin-right: 28px;
+    justify-content: space-between;
     gap: 30px;
-    justify-content: center;
 }
 
 .card {
     text-align: center;
     max-width: 367.8px;
-    /* height: 476.78px; */
     padding: 61px 40px 58px;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18.86px;
@@ -252,7 +249,7 @@ header {
 }
 
 .story-card {
-    width: 540.27px;
+    max-width: 540.27px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
     padding-bottom: 34px;
@@ -345,10 +342,12 @@ header {
     font-size: 1.25rem;
     font-weight: 400;
 }
+
 .about-school h5 {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .about-school ul li {
     list-style: none;
     margin-bottom: 20px;
@@ -359,7 +358,7 @@ header {
     font-size: 1.25rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    
+
 }
 
 /* Responsive Media Query */
@@ -372,7 +371,8 @@ header {
         margin: auto 5px;
 
     }
-    .primary-title{
+
+    .primary-title {
         margin-bottom: 20px;
     }
 
