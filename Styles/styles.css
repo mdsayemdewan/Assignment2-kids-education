@@ -56,7 +56,7 @@
 
 
 .primary-title {
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 80px;
@@ -65,6 +65,7 @@
 .primary-bg {
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* nav & banner part */
@@ -316,24 +317,18 @@ header {
 /* footer part */
 
 .footer {
-    background-color: rgb(1, 172, 253);
+    background-color: rgb(116, 192, 236);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
     padding: 123px 228px 124px 140px;
     color: rgb(255, 255, 255);
     gap: 170px;
 
 }
 
-.kids-edu-disc {
-    justify-content: center;
-    align-items: center;
-}
-
 .kids-edu-disc img {
-    background: rgb(255, 255, 255);
+    max-height: 82px;
     margin-right: 11px;
 
 }
@@ -342,19 +337,18 @@ header {
     font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 36px;
+    margin-top: 10px;
 }
 
 .kids-edu h5 {
-    margin-top: 36px;
+    margin-top: 30px;
     font-size: 1.25rem;
     font-weight: 400;
 }
-
 .about-school h5 {
     font-size: 1.5rem;
     font-weight: 700;
 }
-
 .about-school ul li {
     list-style: none;
     margin-bottom: 20px;
@@ -365,6 +359,7 @@ header {
     font-size: 1.25rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    
 }
 
 /* Responsive Media Query */
@@ -372,11 +367,20 @@ header {
 
     .card-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto 5px;
 
+    }
+    .primary-title{
+        margin-bottom: 20px;
     }
 
     .navbar {
         justify-content: space-between;
+        box-sizing: border-box;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        padding-bottom: 12px;
     }
 
     .nav-icon {
@@ -389,7 +393,8 @@ header {
     .logo h5,
     .list-items,
     .nav-btn,
-    .curriculum-btn,.story-card {
+    .curriculum-btn,
+    .story-card {
         display: none;
     }
 
@@ -401,16 +406,21 @@ header {
     .banner img {
         width: 90%;
     }
-    .mini-card{
-        grid-template-columns: repeat(2,1fr);
+
+    .mini-card {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .story-btn{
-        left:15px;
+
+    .story-btn {
+        left: 15px;
     }
-    .footer{
-        grid-template-columns: repeat(1,1fr);
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
         gap: 2px;
-        margin: 10px 2px;
+        margin: 8px 2px;
+        padding: 35px 30px 40px;
     }
 
 }
