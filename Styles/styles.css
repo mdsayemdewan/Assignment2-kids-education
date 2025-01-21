@@ -10,16 +10,19 @@
 
 
 /* shared style */
-.font-orange{
-    color:rgb(254, 163, 1) ;
+.font-orange {
+    color: rgb(254, 163, 1);
 }
-.font-skyblue{
-    color:rgb(1, 172, 253) ;
+
+.font-skyblue {
+    color: rgb(1, 172, 253);
 }
-.font-color3{
-    color:rgb(5, 212, 223) ;
+
+.font-color3 {
+    color: rgb(5, 212, 223);
 }
-.font-color4{
+
+.font-color4 {
     color: rgb(93, 88, 239);
 }
 
@@ -35,11 +38,16 @@
     font-size: 1.25rem;
     padding: 10px;
     width: 157px;
+    color: rgb(255, 255, 255);
 }
 
 
-/* banner part */
-.navbar {
+/* nav & banner part */
+header{
+    margin-bottom: 60px;
+}
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
@@ -72,16 +80,35 @@
 
 .nav-btn {
     font-weight: 600;
-    color:rgb(255, 255, 255);
-    
+
+
+}
+
+.banner-desc {
+    max-width: 640px;
+}
+
+.banner-desc h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner-desc h5 {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.banner-btn {
+    background: rgb(17, 17, 17);
 }
 
 
 
 
 
-
-/* Responsive Media Query
+Responsive Media Query
 @media screen and (max-width:576px) {
     .row{
         flex-direction: column;
