@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* shared style */
+.font-orange{
+    color:rgb(254, 163, 1) ;
+}
+.font-skyblue{
+    color:rgb(1, 172, 253) ;
+}
+.font-color3{
+    color:rgb(5, 212, 223) ;
+}
+.font-color4{
+    color: rgb(93, 88, 239);
+}
+
+
+.display-flex {
+    display: flex;
+}
+
+.btn-bgn {
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    border: none;
+    font-size: 1.25rem;
+    padding: 10px;
+    width: 157px;
+}
+
+
+/* banner part */
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 62px;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.list-items {
+    list-style: none;
+    margin-right: 32px;
+}
+
+.list-items a {
+    text-decoration: none;
+}
+
+.list-items li {
+    margin-right: 32px;
+}
+
+.nav-btn {
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    
+}
+
+
+
+
+
+
+/* Responsive Media Query
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* medium devices */
+/* @media screen and (min-width: 576px) and (max-width: 992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+} */
