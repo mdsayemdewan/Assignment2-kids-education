@@ -367,8 +367,7 @@ header {
 @media screen and (max-width:576px) {
 
     .card-container,
-    .story-contain,
-    .kids-edu-disc {
+    .story-contain {
         flex-direction: column;
         justify-content: center;
         align-items: center;
