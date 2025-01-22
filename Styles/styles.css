@@ -118,6 +118,7 @@ header {
 
 
 }
+
 /* banner style */
 .banner-desc {
     max-width: 640px;
@@ -218,6 +219,7 @@ header {
 
 .story-bg {
     background: url(../images/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+
 }
 
 .story-contain {
@@ -364,7 +366,9 @@ header {
 /* Responsive Media Query */
 @media screen and (max-width:576px) {
 
-    .card-container {
+    .card-container,
+    .story-contain,
+    .kids-edu-disc {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -407,13 +411,25 @@ header {
         width: 90%;
     }
 
-    .mini-card {
+    .story-card-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
         justify-items: center;
+        padding: 10px;
     }
 
     .story-btn {
-        left: 15px;
+        left: 10px;
+
+    }
+
+    .mini-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .story-bg {
+        margin: 0 auto;
     }
 
     .footer {
